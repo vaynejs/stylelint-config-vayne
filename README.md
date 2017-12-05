@@ -1,6 +1,11 @@
 # stylelint-config-vayne
-vayne stylelint 配置文件
+vayne stylelint 配置
 
+## Installation
+```
+yarn add stylelint-config-vayne -D
+npm i stylelint-config-vayne -D
+```
 
 ## [stylelint](https://github.com/stylelint/stylelint)
 
