@@ -1,0 +1,35 @@
+{
+  "name": "stylelint-config-vayne",
+  "version": "1.0.0",
+  "description": "vayne stylelint 配置文件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaynejs/stylelint-config-vayne.git"
+  },
+  "keywords": [
+    "vayne",
+    "styleLint",
+    "scss",
+    "scss-lint"
+  ],
+  "author": "xierenyuan@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaynejs/stylelint-config-vayne/issues"
+  },
+  "homepage": "https://github.com/vaynejs/stylelint-config-vayne#readme",
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-vayne": "^0.0.5"
+  },
+  "dependencies": {
+    "stylelint": "^8.3.1",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-processor-html": "^1.0.0",
+    "stylelint-scss": "^2.2.0"
+  }
+}
