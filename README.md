@@ -20,3 +20,9 @@ npm i stylelint-config-vayne -D
 > @see [中文翻译](https://segmentfault.com/a/1190000004588228)
 
 > @see [stylelint-scss](https://github.com/kristerkari/stylelint-scss)
+
+## Reference
+
+> Vue 显示的行数 对应不上的问题
+https://github.com/JaKXz/stylelint-webpack-plugin/issues/68
+https://github.com/vuejs/vue-loader/issues/303#issuecomment-282131495

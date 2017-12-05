@@ -10,7 +10,7 @@ module.exports = {
     'stylelint-config-standard'
   ],
   'processors': [
-    'stylelint-processor-html'
+    '@mapbox/stylelint-processor-arbitrary-tags'
   ],
   'rules': {
     'no-empty-source': null,
@@ -36,6 +36,7 @@ module.exports = {
         'while'
       ]
     }],
+    'max-nesting-depth': 4, // 允许嵌套的深度
     'scss/at-extend-no-missing-placeholder': true,
     'scss/at-function-pattern': '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
     'scss/at-import-no-partial-leading-underscore': true,
