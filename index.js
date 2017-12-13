@@ -9,11 +9,19 @@ module.exports = {
   'extends': [
     'stylelint-config-standard'
   ],
-  'processors': [
-    '@mapbox/stylelint-processor-arbitrary-tags'
-  ],
   'rules': {
+    'function-name-case': null,
+    'no-eol-whitespace': null,
     'no-empty-source': null,
+    // 使用 postcss-plugins-px2rem 插件下面的几个属性无法识别的问题
+    'unit-no-unknown': [true, {
+      'ignoreUnits': [
+        'DPX',
+        'RPX'
+      ]
+    }],
+    // 属性大小写
+    'unit-case': null,
     'at-rule-no-unknown': [true, {
       'ignoreAtRules': [
         'at-root',
@@ -36,9 +44,8 @@ module.exports = {
         'while'
       ]
     }],
-    'max-nesting-depth': 4, // 允许嵌套的深度
     'scss/at-extend-no-missing-placeholder': true,
-    'scss/at-function-pattern': '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
+    // 'scss/at-function-pattern': '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
     'scss/at-import-no-partial-leading-underscore': true,
     'scss/at-import-partial-extension-blacklist': ['scss'],
     'scss/at-mixin-pattern': '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
@@ -48,5 +55,4 @@ module.exports = {
     'scss/percent-placeholder-pattern': '^[a-z]+([a-z0-9-]+[a-z0-9]+)?$',
     'scss/selector-no-redundant-nesting-selector': true
   }
-
 }
